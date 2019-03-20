@@ -1,7 +1,0 @@
-* Implementation of simple calculator using yew
-
-This calculator app is made by me to learn wasm with rust. 
-
-toml: 
-- yew
-- meval
