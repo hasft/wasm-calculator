@@ -1,6 +1,8 @@
 # Implementation of simple calculator using yew
 
-This calculator app is made by me to learn wasm with rust. 
+This calculator app is made to learn wasm with rust. 
+
+![image-yeay](https://github.com/hasft/wasm-calculator/blob/master/calc.png)
 
 packages: 
 - [yew](https://github.com/DenisKolodin/yew)
