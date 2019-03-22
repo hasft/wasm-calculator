@@ -89,9 +89,13 @@ impl Component for Model {
                 self.input.remove(len).to_string();
             }
             Msg::Calculate => {
-                let r:f64 = meval::eval_str(&self.input).unwrap();
-                self.result = r.to_string();
-                self.input.clear();
+                if self.input.is_empty() {
+                    return false
+                } else {
+                    let r:f64 = meval::eval_str(&self.input).unwrap();
+                    self.result = r.to_string();
+                    self.input.clear();
+                }
             }
             Msg::Clear => {
                 self.result = String::from("0");
